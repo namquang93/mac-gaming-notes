@@ -15,6 +15,7 @@ Notes from getting Windows games running on Apple Silicon through **Mac Steam + 
 
 | Game | Status | Notes |
 | --- | --- | --- |
+| [Forza Horizon 4](games/forza-horizon-4/README.md) | Free roam works; online unreliable | Community patches adapted to NotProton, GPU id spoof, GPTK 4.0b3 |
 | [GTA V Enhanced](games/gta-v-enhanced/README.md) | Boots past the DX12 check (gameplay not yet tested) | Needs the stock GPTK `d3d12.dll` via a runner variant |
 
 ## Docs

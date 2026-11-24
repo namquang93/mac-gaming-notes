@@ -22,7 +22,7 @@ Needs the `gptk4b3-stock-d3d12` [runner variant](../../docs/runner-variants.md),
 
 GTA V Enhanced is built on Microsoft's **Agility SDK 1.611**: the exe exports `D3D12SDKVersion = 611` and `D3D12SDKPath = .\D3D12-REDIST\`. Agility SDK games (and NVIDIA Streamline's `sl.interposer.dll`, which the game ships) call `D3D12GetInterface` from `d3d12.dll`.
 
-The runner's `d3d12.dll` had been replaced by a custom wrapper for an earlier Forza Horizon fix, and that wrapper does **not** export `D3D12GetInterface`. The stock GPTK file does. Without the export, the game concludes DX12 is unavailable.
+The runner's `d3d12.dll` had been replaced by a custom wrapper for the [Forza Horizon 4 fix](../forza-horizon-4/README.md), and that wrapper does **not** export `D3D12GetInterface`. The stock GPTK file does. Without the export, the game concludes DX12 is unavailable.
 
 D3DMetal itself was fine: GPTK 4.0b3's `d3d12core.dll` reports Agility SDK 619, newer than the 611 the game needs.
 
